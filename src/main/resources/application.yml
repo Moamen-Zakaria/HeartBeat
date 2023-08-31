@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=mydb
+    username: postgres
+    password: pass
+    driverClassName: org.postgresql.Driver
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: always
+      schema: job
+server:
+  port: 8089
